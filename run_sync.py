@@ -1,5 +1,3 @@
-import aiohttp
-import asyncio
 import requests
 
 from time import time
@@ -20,8 +18,6 @@ def write_file(response):
 
 def main():
     t = time()
-
-    url = "https://loremflickr.com/1280/720/"
 
     for i in range(10):
         write_file(get_file(url=url))
